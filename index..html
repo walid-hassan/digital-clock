@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet"> 
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Roboto Condensed', sans-serif;
+            background-image: linear-gradient(#76d1ed,#52d0e5,#3691e1);
+        }
+        .clock {
+            /* background: gray; */
+            display: flex;
+            width: 500px;
+            justify-content: space-around;
+            padding: 10px 0;
+            flex-wrap: wrap;
+        }
+        .hour, .min, .sec, .amOrpm {
+            background: #d72972;
+            text-align: center;
+            padding: 20px 35px;
+            font-size: 30px;
+            color: white;
+            border-radius: 5px;
+            font-weight: 700;
+            text-shadow: 3px 3px #484646;
+        }
+        .min{
+            background-color: #27668c;
+        }
+        .sec{
+            background-color: #7400ff;
+        }
+        .amOrpm{
+            background-color: #3133b0;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="clock">
+        <div class="hour"></div>
+        <div class="min"></div>
+        <div class="sec"></div>
+        <div class="amOrpm"></div>
+    </div>
+    <script src="clock.js"></script>
+</body>
+</html>
